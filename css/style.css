@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(128, 0, 128, 0.5);
+  position: relative;
+}
+
+#card-container {
+  word-break: break-word;
+  background-image: linear-gradient(rgba(39, 20, 161, 0.5450980392), rgba(59, 9, 83, 0.537254902));
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 60%;
+  padding: 2rem 2rem;
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+#card-icon_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#card-icon {
+  max-width: 20rem;
+  min-width: 7rem;
+  align-self: flex-start;
+}
+
+#card-city {
+  font-size: 4rem;
+  padding: 0rem 2rem;
+}
+
+#card-temp {
+  font-size: 4rem;
+}
+
+#card-date {
+  padding: 2rem;
+}
+
+#root {
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#backgroundHolder {
+  background: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg);
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(2px);
+}
+
+.search-main {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 3rem;
+  z-index: 11;
+}
+
+#card-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  padding-top: 4rem;
+  z-index: 11;
+}
+
+.input-field {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#searchbar {
+  padding: 0.3rem;
+  margin: 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  border: none;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+#searchbar:focus {
+  border-style: solid;
+  border-width: 0.12rem;
+  outline: #222222;
+}
+
+#searchtitle {
+  padding: 0.1rem;
+  margin: 0.2rem;
+}
+
+.dropdown {
+  width: 50%;
+  display: none;
+  position: absolute;
+  top: 7.3rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 20rem;
+  z-index: 11;
+  border-radius: 0.7rem;
+  color: #222222;
+}
+
+.match {
+  width: 100%;
+  padding: 0.1rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.455);
+}
+
+.match:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.757);
+  color: #111111;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  #root {
+    flex-direction: column;
+  }
+  .search-main {
+    width: 100%;
+    height: 60%;
+  }
+  .input-field {
+    width: 70%;
+    font-size: 1.9rem;
+    align-items: center;
+  }
+  #searchbar {
+    font-size: 2rem;
+  }
+  #searchbar:focus {
+    box-shadow: 0px 0px 3px #222222;
+    border: none;
+  }
+  #searchtitle {
+    padding: 0.1rem;
+    margin: 0.2rem 0.2rem 0.6rem 0.2rem;
+  }
+  .dropdown {
+    top: 10.5rem;
+    max-height: 16rem;
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  #card-main {
+    padding-top: 2rem;
+    width: 100%;
+  }
+  #card-container {
+    padding: 1.5rem;
+    min-width: 70%;
+    box-shadow: 0px 0px 3px #222222;
+  }
+  #card-icon-text {
+    font-size: 2rem;
+  }
+  #backgroundHolder {
+    filter: blur(1.5px);
+  }
+  #card-date {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  #card-city {
+    font-size: 2.2rem;
+    padding: 0rem 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
